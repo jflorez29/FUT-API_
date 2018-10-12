@@ -32,7 +32,7 @@ fun main(args : Array<String>) {
     var list = firebase.getPlayerList(user = User("fga.jeisson@gmail.com", Authentication("", "")))
     print(list)
     while (!list.isEmpty()) {
-        if (cantidad > (35..40).shuffled().last()){
+        if (cantidad > (31..44).shuffled().last()){
             println("Waiting ")
             kotlin.run { Thread.sleep((60..300).shuffled().last().toLong() * 1000) } // Minimum delay between request
             cantidad = 0
